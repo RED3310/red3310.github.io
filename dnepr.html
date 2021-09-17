@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Продукция LIBERTA в Днепре - интернет-магазин Liberta</title>
+  <meta name="description" content="Купить товары LIBERTA в Днепре под заказ, официальный интернет-магазин. ✔ Бесплатная доставка по всей Украине. ✔ Гарантия 24 месяца. ✔ Широкий выбор.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/KievitPro-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="popup-info-up container-fluid py-2 bg-primary text-white fs-14 border-secondary border-left border-4">
+  <div class="row align-items-center flex-sm-nowrap">
+    <div class="col-sm">
+      <p class="mb-0">Срок производства индивидуальных зеркал и душевых кабин от 1-го до 7-ми рабочих дней. Убедитесь в совершенстве LIBERTA!</p>
+    </div>
+    <div class="col-sm-auto mt-2 mt-sm-0">
+      <button class="btn btn-sm btn-outline-light">Спасибо, уже знаю</button>
+    </div>
+  </div>
+</div>
+
+
+  <header class="header">
+    <div class="header__top-wrapper">
+  <div class="header__top">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-auto col-sm">
+          <div class="row align-items-center">
+            <div class="col-auto d-block d-xl-none">
+              <button type="button" class="btn-unstyled mobile-menu-toggle">
+                <span class="mobile-menu-toggle__icon"></span>
+              </button>
+            </div>
+            <div class="col-auto d-none d-xl-block">
+              <div class="dropdown">
+                <button class="btn-unstyled dropdown-toggle" type="button" id="showrooms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg class="align-baseline" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#map-mark"></use>
+                  </svg>
+                  Адреса шоурумов
+                </button>
+                <div class="dropdown-menu fs-14" aria-labelledby="showrooms">
+                  <a class="dropdown-item" href="/dnepr">Днепр</a>
+                  <a class="dropdown-item" href="/kyiv">Киев</a>
+                  <a class="dropdown-item" href="/kharkov">Харьков</a>
+                  <a class="dropdown-item" href="/odessa">Одесса</a>
+                  <a class="dropdown-item" href="/lviv">Львов</a>
+                  <a class="dropdown-item" href="/showrooms">УКРАИНА</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-none d-xl-block">
+              <a href="/service-center">Сервисный центр</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto text-center">
+          <a href="/" class="d-block">
+            <img class="header__logo img-fluid d-none d-xl-block mx-auto" src="//liberta.ua/img/svg/logo.svg" alt="Liberta logo">
+            <img class="header__logo header__logo--m img-fluid d-xl-none" src="//liberta.ua/img/svg/logo_mob.svg" alt="Liberta logo">
+          </a>
+        </div>
+        <div class="col-auto col-sm header__top-right">
+          <div class="row align-items-center justify-content-end flex-nowrap">
+            <div class="header__phone col-auto d-none d-xl-block">
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="tel:+380673265980" role="button" id="phones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  +38(067) 326-59-80
+                </a>
+                <div class="dropdown-menu fs-14" aria-labelledby="phones">
+                  <a class="dropdown-item" href="tel:+380501005980">+38(050) 100-59-80</a>
+                  <a class="dropdown-item" href="tel:+380931701347">+38(093) 170-13-47</a>
+                  <span class="d-block text-center fs-16">Отдел нестандартов:</span>
+                  <a class="dropdown-item" href="tel:+380500155090">+38(050) 015 50 90</a>
+                  <a class="dropdown-item" href="tel:+380970155090">+38(097) 015 50 90</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <form action="/search" le="search" class="search-form">
+                <button type="button" class="search-form__toggle btn-unstyled">
+                  <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <input type="search" name="q" class="search-form__field" placeholder="Поиск по сайту" autocomplete="off" value="">
+              </form>
+            </div>
+            <div class="col-auto">
+              <!-- чтобы сделать ссылку неактивной - убираем href -->
+              <a class="cart-link" href="/cart">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+                <span id="cart-count" class="cart-link__count">1</span>
+              </a>
+            </div>
+            <div class="col-auto d-none d-xl-block">
+              <a class="profile-link" href="#">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__languages col-auto d-none d-xl-block">
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="languages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  RU
+                </a>
+                <div class="dropdown-menu dropdown-menu-right fs-14" aria-labelledby="languages">
+                  <a class="dropdown-item" href="#">UA</a>
+                  <a class="dropdown-item" href="#">EN</a>
+                  <a class="dropdown-item" href="#">DE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header__nav-wrpapper d-none d-xl-block">
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="main-nav__list list-unstyled mb-0">
+        <li class="main-nav__list-item has-children mirrors">
+          <a href="/mirrors">Зеркала</a>
+          <div class="main-nav__categories">
+            <div class="container">
+              <ul class="main-nav__categories-menu row list-unstyled mb-0">
+                <li class="col-xl-2">
+                  <span class="fs-16 text-body font-weight-500">Коллекция</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-art">ART</a></li>
+                    <li><a href="/mirrors-smart">Smart</a></li>
+                    <li><a href="/mirrors-royal">Royal</a></li>
+                    <li><a href="/mirrors-deluxe">Deluxe</a></li>
+                    <li><a href="/mirrors-premio">Premio</a></li>
+                    <li><a href="/mirrors-standart">Standart</a></li>
+                    <li><a href="/mirrors-new">НОВИНКИ</a></li>
+                  </ul>
+                </li>
+                <li class="col-xl-2">
+                  <span class="fs-16 text-body font-weight-500">Место размещения</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-bathroom">Ванная</a></li>
+                    <li><a href="/mirrors-lobby">Прихожая</a></li>
+                    <li><a href="/mirrors-livingroom">Гостинная</a></li>
+                    <li><a href="/mirrors-bedroom">Спальня</a></li>
+                    <li><a href="/mirrors-makeup">Салон красоты</a></li>
+                    <li><a href="/mirrors-kids">Детская</a></li>
+                  </ul>
+                </li>
+                <li class="col-xl-2">
+                  <span class="fs-16 text-body font-weight-500">Форма</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-rectangular">Прямоугольные</a></li>
+                    <li><a href="/mirrors-square">Квадратные</a></li>
+                    <li><a href="/mirrors-rounded">Закругленные</a></li>
+                    <li><a href="/mirrors-ovals">Овальные</a></li>
+                    <li><a href="/mirrors-circle">Круглые</a></li>
+                  </ul>
+                </li>
+                <li class="col-xl-4">
+                  <span class="fs-16 text-body font-weight-500">Дополнительные опции</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-withillumination">С подсветкой</a></li>
+                    <li><a href="/mirrors-withoutillumination">Без подсветки</a></li>
+                    <li><a href="/mirrors-svetilnik">Светильник</a></li>
+                    <li><a href="/mirrors-polka">Полка</a></li>
+                    <li><a href="/mirrors-linza">Линза</a></li>
+                    <li><a href="/mirrors-clock">Часы</a></li>
+                    <li><a href="/mirrors-aluminum">Металлическая рама</a></li>
+                    <li><a href="/mirrors-med">Медиа</a></li>
+                    <li><a href="/mirrors-instock">В наличии</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="main-nav__list-item has-children">
+          <a href="/showers">Душевые кабины</a>
+          <div class="main-nav__categories">
+            <div class="container">
+              <ul class="main-nav__categories-menu row justify-content-center list-unstyled mb-0">
+                <li class="col-xl-2">
+                  <a href="/showers-cabins">Угловые кабины</a>
+                </li>
+                <li class="col-xl-2">
+                  <a href="/showers-door">Двери для душа</a>
+                </li>
+                <li class="col-xl-2">
+                  <a href="/showers-partitions">Перегородки для душа</a>
+                </li>
+                <li class="col-xl-2">
+                  <a href="/showers-curtains">Шторки для ванной</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="/doors">Межкомнатные двери</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="/sliding">Раздвижные системы</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="mobile-menu d-xl-none">
+  <div class="mobile-nav bg-white">
+    <ul class="mobile-nav__list mobile-nav__list--catalog list-unstyled">
+      <li class="mobile-nav__list-item">
+        <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+        <a href="/mirrors">Зеркала</a>
+        <ul class="mobile-nav__submenu mobile-nav__submenu--l1 list-unstyled">
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Коллекция</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-art">ART</a></li>
+              <li><a href="/mirrors-smart">Smart</a></li>
+              <li><a href="/mirrors-royal">Royal</a></li>
+              <li><a href="/mirrors-deluxe">Deluxe</a></li>
+              <li><a href="/mirrors-premio">Premio</a></li>
+              <li><a href="/mirrors-standart">Standart</a></li>
+              <li><a href="/mirrors-new">НОВИНКИ</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Место размещения</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-bathroom">Ванная</a></li>
+              <li><a href="/mirrors-lobby">Прихожая</a></li>
+              <li><a href="/mirrors-livingroom">Гостинная</a></li>
+              <li><a href="/mirrors-bedroom">Спальня</a></li>
+              <li><a href="/mirrors-makeup">Салон красоты</a></li>
+              <li><a href="/mirrors-kids">Детская</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Форма</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-rectangular">Прямоугольные</a></li>
+              <li><a href="/mirrors-square">Квадратные</a></li>
+              <li><a href="/mirrors-rounded">Закругленные</a></li>
+              <li><a href="/mirrors-ovals">Овальные</a></li>
+              <li><a href="/mirrors-circle">Круглые</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Дополнительные опции</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-withillumination">С подсветкой</a></li>
+              <li><a href="/mirrors-withoutillumination">Без подсветки</a></li>
+              <li><a href="/mirrors-svetilnik">Светильник</a></li>
+              <li><a href="/mirrors-polka">Полка</a></li>
+              <li><a href="/mirrors-linza">Линза</a></li>
+              <li><a href="/mirrors-clock">Часы</a></li>
+              <li><a href="/mirrors-aluminum">Металлическая рама</a></li>
+              <li><a href="/mirrors-med">Медиа</a></li>
+              <li><a href="/mirrors-instock">В наличии</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-nav__list-item">
+        <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+        <a href="/showers">Душевые</a>
+        <ul class="mobile-nav__submenu mobile-nav__submenu--l1 list-unstyled">
+          <li>
+            <a href="/showers-cabins">Угловые кабины</a>
+          </li>
+          <li>
+            <a href="/showers-door">Двери для душа</a>
+          </li>
+          <li>
+            <a href="/showers-partitions">Перегородки для душа</a>
+          </li>
+          <li>
+            <a href="/showers-curtains">Шторки для ванной</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-nav__list-item">
+        <a href="/doors">Межкомнатные двери</a>
+      </li>
+      <li class="mobile-nav__list-item">
+        <a href="/sliding">Раздвижные системы</a>
+      </li>
+    </ul>
+    <ul class="mobile-nav__list mobile-nav__list--pages list-unstyled">
+      <li class="mobile-nav__list-item"><a href="/about-us">О компании</a></li>
+      <li class="mobile-nav__list-item"><a href="/showrooms">Адреса шоурумов</a></li>
+      <li class="mobile-nav__list-item"><a href="/service-center">Сервисный центр</a></li>
+      <li class="mobile-nav__list-item"><a href="/payment-and-delivery">Доставка и оплата</a></li>
+      <li class="mobile-nav__list-item"><a href="/garranty-and-return">Гарантия и возврат</a></li>
+      <li class="mobile-nav__list-item"><a href="/blog">Блог</a></li>
+      <li class="mobile-nav__list-item"><a href="/contacts">Контактная информация</a></li>
+      <li class="mobile-nav__list-item"><a href="/mission">Социальная миссия</a></li>
+    </ul>
+    <ul class="mobile-nav__list mobile-nav__list--phones list-unstyled">
+      <li class="mobile-nav__list-item"><a href="tel:+380673265980">+38(067) 326-59-80</a></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380501005980">+38(050) 100-59-80</a></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380931701347">+38(093) 170-13-47</a></li>
+      <li class="mobile-nav__list-item"><span>Отдел нестандартов:</span></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380500155090">+38(050) 015 50 90</a></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380970155090">+38(097) 015 50 90</a></li>
+    </ul>
+  </div>
+</div>
+
+  </header>
+
+  <main class="pt-20p pt-xl-0">
+    <div class="container">
+      <nav aria-label="breadcrumb" class="d-none d-xl-block">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Продукция LIBERTA в Днепре</li>
+        </ol>
+      </nav>
+      <h1>Продукция LIBERTA в Днепре</h1>
+    </div>
+    <section class="text-center mt-40p pb-50p">
+      <div class="container">
+        <h2 class="sr-only">Товары</h2>
+        <div class="row row-16 justify-content-center mb-n3 mb-md-0">
+          <div class="col-sm-6 col-md-4 mb-3 mb-md-0">
+            <a href="#" class="about-products__item h1" style="background-image: url('//liberta.ua/img/prod-count-bg-1.jpg');">
+              <span class="about-products__item-count">623</span>
+              <span class="about-products__item-descr">Моделей зеркал</span>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 mb-md-0">
+            <a href="#" class="about-products__item h1" style="background-image: url('//liberta.ua/img/prod-count-bg-2.jpg');">
+              <span class="about-products__item-count">140</span>
+              <span class="about-products__item-descr">Душевых кабин</span>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 mb-md-0">
+            <a href="#" class="about-products__item h1" style="background-image: url('//liberta.ua/img/prod-count-bg-3.jpg');">
+              <span class="about-products__item-count">4</span>
+              <span class="about-products__item-descr">Модели дверей</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light py-50p">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-10 mx-auto">
+            <h2>Магазины LIBERTA в Днепре</h2>
+            <p>Яркая индивидуальность компании проявляется не только в качестве, но и в инновациях. Если в мире появляется новая технология работы со стеклом — то в Украине ее воплотит именно ТМ Liberta. Так произошло со Smart Mirror, гравировкой “бушарде” и другими ноу-хау. При этом цены всей продукции остаются беспрецедентно доступными для премиум-сегмента благодаря собственному производству без наценок. Доставка осуществляется в любой город Украины. Не только Днепр, но и другие регионы заказывают зеркала, душевые кабины, межкомнатные двери Liberta. Наши постоянные клиенты заявляют о превосходстве качества, ассортимента и цен нашей продукции над конкурентами.
+            </p>
+          </div>
+        </div>
+        <div class="shops-slider mt-4">
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/5_Кафель Сантехника_1539956515.jpg" alt="">
+            <div class="shops-slider__item-name">Кафель Сантехника</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              вул. Рабоча, 152
+            </div>
+          </div>
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/3_Новий Світ_1617957873.jpg" alt="">
+            <div class="shops-slider__item-name">Новий Світ</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              пр. Богдана Хмельницького, 20
+            </div>
+          </div>
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/4_Новий Світ_1617958069.jpg" alt="">
+            <div class="shops-slider__item-name">Новий Світ</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              вул. Володимира Вернадського, 23
+            </div>
+          </div>
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/2_Новий Світ_1617956171.jpg" alt="">
+            <div class="shops-slider__item-name">Новий Світ</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              пр. Слобожанський, 117
+            </div>
+          </div>
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/1_Дом Керамики_1539956025.jpg" alt="">
+            <div class="shops-slider__item-name">Дом Керамики</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              смт. Ювілейне, вул. Паркова, 3
+            </div>
+          </div>
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/83_Дом Керамики_1595339029.jpg" alt="">
+            <div class="shops-slider__item-name">Дом Керамики</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              пр. Пушкіна, 7
+            </div>
+          </div>
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/78_Ванна Кімната_1548747468.jpg" alt="">
+            <div class="shops-slider__item-name">Ванна Кімната</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              пр. Олександра Поля, 98
+            </div>
+          </div>
+          <div class="shops-slider__item">
+            <img class="img-fluid mx-auto mb-3" src="//liberta.ua/uploads/agent/300x200/изображение_viber_2020-07-22_15-39-34_1595421764.jpg" alt="">
+            <div class="shops-slider__item-name">LIBERTA фабрика</div>
+            <div class="shops-slider__item-adress">
+              <svg class="align-baseline text-secondary" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#map-mark"></use>
+              </svg>
+              вул. Панікахи, 1
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category-map">
+      <div class="row no-gutters">
+        <div class="col-md-5 col-xl-3 offset-xl-2">
+          <div class="category-map__text container">
+            <h2>Адреса Liberta в Днепре и области</h2>
+            <p>Стеклянные перегородки, душевые кабины, межкомнатные двери и зеркала на заказ — компания-производитель Liberta сделала изделия из стекла произведениями искусства. Премиум-качество, индивидуальный подход и эксклюзивные для Украины технологии, которых вы не найдете у других марок. Купить уникальные зеркала и другую продукцию Liberta можно в шоу-румах и магазинах Днепра. Их адреса с отметками на карте вы найдете в соответствующем разделе сайта.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 col-xl-7">
+          <div id="map" class="position-relative overflow-hidden h-100"></div>
+        </div>
+      </div>
+      <div class="category-map__footer container text-center py-40p">
+        Магазины зеркал в других городах Украины:
+        <a href="kyiv" class="city">Киев</a>, <a href="kharkov" class="city">Харьков</a>, <a href="odessa" class="city">Одесса</a>, <a href="lviv" class="city">Львов</a>, <a href="zaporizhzhia" class="city">Запорожье</a>.
+      </div>
+    </section>
+  </main>
+
+  <div class="subscribe text-center">
+  <div class="container">
+    <form>
+      <div class="form-group mb-0 form-row align-items-center justify-content-center">
+        <label for="subscribe" class="col-lg-auto mb-lg-0">Советы по стилю, новинки и распродажи. Подпишись:</label>
+        <div class="col-sm-auto mb-2 mb-sm-0">
+          <input type="email" class="subscribe__form-control form-control rounded-lg" id="subscribe" placeholder="Ваша эл. почта" required="">
+        </div>
+        <div class="col-sm-auto">
+          <button class="subscribe__btn btn btn-secondary">Подписаться</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top d-none d-xl-block">
+      <div class="row no-gutters align-items-start">
+        <div class="col-3 footer__col">
+          <div class="footer__menu-title">Интернет-магазин</div>
+          <ul class="footer__menu list-unstyled mb-0">
+            <li><a href="/about-us">О компании</a></li>
+            <li><a href="/blog">Блог</a></li>
+            <li><a href="/showrooms">Адреса шоу-румов</a></li>
+          </ul>
+        </div>
+        <div class="col-3 footer__col">
+          <div class="footer__menu-title">Каталог товаров</div>
+          <ul class="footer__menu list-unstyled mb-0">
+            <li><a href="/mirrors">Зеркала</a></li>
+            <li><a href="/showers-cabins">Душевые</a></li>
+            <li><a href="/doors">Межкомнатные двери</a></li>
+            <li><a href="/sliding">Раздвижные системы</a></li>
+          </ul>
+        </div>
+        <div class="col-3 footer__col">
+          <div class="footer__menu-title">Информация для покупателей</div>
+          <ul class="footer__menu list-unstyled mb-0">
+            <li><a href="/service-center">Сервисный центр</a></li>
+            <li><a href="/payment-and-delivery">Доставка и оплата</a></li>
+            <li><a href="/garranty-and-return">Гарантия и возврат</a></li>
+          </ul>
+        </div>
+        <div class="col-3 footer__col footer__col--contacts">
+          <div class="footer__menu-title">Есть вопросы?</div>
+          <ul class="footer__phones list-unstyled">
+            <li><a href="tel:+380673265980">+38(067) 326-59-80</a></li>
+            <li><a href="tel:+380501005980">+38(050) 100-59-80</a></li>
+            <li><a href="tel:+380931701347">+38(093) 170-13-47</a></li>
+          </ul>
+          <ul class="footer__menu list-unstyled mb-0">
+            <li><a href="mailto:info@liberta.com.ua">info@liberta.com.ua</a></li>
+            <li><a href="/contacts">Контактная информация</a></li>
+            <li><a href="/mission">Социальная миссия</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
+          <p class="text-muted mb-0">© 2020 Интернет-магазин Liberta</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <ul class="footer__social list-unstyled mb-0">
+            <li>
+              <a href="https://www.facebook.com/Liberta.LED" target="_blank">
+                <svg height="20" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCUk-bx0lXWfaahpbkN3lMwA" target="_blank">
+                <svg height="20" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/liberta.ua/" target="_blank">
+                <svg height="20" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center text-md-right">
+          <p class="text-muted mb-0">Создание дизайна - <a rel="nofollow" target="_blank" href="http://www.fresh-d.net/">Fresh Agency</a></p>
+        </div>
+      </div>
+    </div>
+</div></footer>
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+  </script>
+  <script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASNscgbZnXDVmfNHEYmaWcycidTZlI1uI&callback=initMap"></script>
+
+  <script defer="" type="text/javascript">
+
+    var libMarkers = [
+      {
+        name: "Новий Світ",
+        description: "вул. Володимира Вернадського, 23",
+        img: "https://liberta.ua/uploads/agent/4_Новий Світ_1617958069.jpg",
+        locate: {
+          lat: 48.461608,
+          lng: 35.059737
+        }
+      },
+      {
+        name: "Европа",
+        description: "пр. Дмитрия Яворницкого, 111",
+        img: "https://liberta.ua/uploads/agent/17_Европа Днепр 1_1551104078.jpg",
+        locate: {
+          lat: 48.472598,
+          lng: 35.024316
+        }
+      },
+      {
+        name: "Дом Керамики",
+        description: "смт. Ювілейне,  вул. Паркова, 3",
+        img: "https://liberta.ua/uploads/agent/1_Дом%20Керамики_1539956025.jpg",
+        locate: {
+          lat: 48.532036,
+          lng: 35.08509
+        }
+      },
+      {
+        name: "Новий Світ",
+        description: "пр. Слобожанський, 117",
+        img: "https://liberta.ua/uploads/agent/2_Новий Світ_1617956171.jpg",
+        locate: {
+          lat: 48.521308,
+          lng: 35.080446
+        }
+      },
+      {
+        name: "Новий Світ",
+        description: "пр. Богдана Хмельницького, 20",
+        img: "https://liberta.ua/uploads/agent/3_Новий Світ_1617957873.jpg",
+        locate: {
+          lat: 48.439485,
+          lng: 35.020554
+        }
+      },
+      {
+        name: "Кафель Сантехника",
+        description: "вул. Рабоча, 152",
+        img: "https://liberta.ua/uploads/agent/5_Кафель%20Сантехника_1539956515.jpg",
+        locate: {
+          lat: 48.451301,
+          lng: 35.00201
+        }
+      },
+      {
+        name: "Кафель Сантехника",
+        description: "пр. Богдана Хмельницького, 1",
+        img: "https://liberta.ua/uploads/agent/6_Кафель Сантехника_1548259843.jpg",
+        locate: {
+          lat: 48.447713,
+          lng: 35.02981
+        }
+      },
+      {
+        name: "Сантехника для всех",
+        description: "ТЦ  Новый Континент  (2 этаж) вул. Наб. Перемоги, 86-а",
+        img: "https://liberta.ua/uploads/agent/7_Сантехника для всех_1551103889.jpg",
+        locate: {
+          lat: 48.429229,
+          lng: 35.065218
+        }
+      },
+      {
+        name: "Сантехника для всех",
+        description: "ТЦ  Курчатовский  (1 этаж) вул. Курчатова, 7",
+        img: "https://liberta.ua/uploads/agent/8_Сантехника для всех_1551103895.jpg",
+        locate: {
+          lat: 48.472491,
+          lng: 35.009409
+        }
+      },
+      {
+        name: "Сантехника кафель",
+        description: "пр. Олександра Поля, 22",
+        img: "https://liberta.ua/uploads/agent/9_Сантехника%20кафель_1539957042.jpg",
+        locate: {
+          lat: 48.45972,
+          lng: 35.025291
+        }
+      },
+      {
+        name: "Atelier Interios",
+        description: "вул. Воскресенська, 20",
+        img: "https://liberta.ua/uploads/agent/13_Atelier%20Interios_1539958539.jpg",
+        locate: {
+          lat: 48.46543,
+          lng: 35.039741
+        }
+      },
+      {
+        name: "АКВАДЕМІ",
+        description: "пр. Олександра Поля, 50",
+        img: "https://liberta.ua/uploads/agent/14_АКВАДЕМІ_1539958625.jpg",
+        locate: {
+          lat: 48.451167,
+          lng: 35.020888
+        }
+      },
+      {
+        name: "Сантехніка",
+        description: "пр. Гагаріна, 102",
+        img: "https://liberta.ua/uploads/agent/15_Сантехніка%20(ФОП%20Черниш%20Д.П.)_1539958702.jpg",
+        locate: {
+          lat: 48.425808,
+          lng: 35.028387
+        }
+      },
+      {
+        name: "Сантехніка",
+        description: "вул. М. Грушевського, 1",
+        img: "https://liberta.ua/uploads/agent/16_Сантехніка%20(ФОП%20Черниш%20Д.П.)_1539960818.jpg",
+        locate: {
+          lat: 48.462884,
+          lng: 35.047113
+        }
+      },
+      {
+        name: "Concept Hall",
+        description: "вул. Рогальова, 33",
+        img: "https://liberta.ua/uploads/agent/18_Concept%20Hall_1539960881.jpg",
+        locate: {
+          lat: 48.467891,
+          lng: 35.056684
+        }
+      },
+      {
+        name: "Світло",
+        description: "пр. Богдана Хмельницкого, 31 д",
+        img: "https://liberta.ua/uploads/agent/19_Світло_1539960976.jpg",
+        locate: {
+          lat: 48.428533,
+          lng: 35.014572
+        }
+      },
+      {
+        name: "Світло",
+        description: "пр. Гагаріна, 76-д ",
+        img: "https://liberta.ua/uploads/agent/20_Світло_1539962186.jpg",
+        locate: {
+          lat: 48.429137,
+          lng: 35.038028
+        }
+      },
+      {
+        name: "Світло",
+        description: "вул. Святослава Хороброго, 29",
+        img: "https://liberta.ua/uploads/agent/21_Світло_1539970736.jpg",
+        locate: {
+          lat: 48.46161,
+          lng: 35.037005
+        }
+      },
+      {
+        name: "Мир",
+        description: "м. Кривий Ріг,  вул. Блюхера, 5",
+        img: "https://liberta.ua/uploads/agent/22_Мир_1539970965.jpg",
+        locate: {
+          lat: 47.902526,
+          lng: 33.419646
+        }
+      },
+      {
+        name: "RUDI",
+        description: " пр. Аношкина, 26",
+        img: "https://liberta.ua/uploads/agent/44_RUDI_1540222619.jpg",
+        locate: {
+          lat: 48.515173,
+          lng: 34.591536
+        }
+      },
+      {
+        name: "Сантехніка",
+        description: "Центральний ринок, вул. Лермонтова",
+        img: "https://liberta.ua/uploads/agent/79_Сантехника%20Монаков_1540226994.jpg",
+        locate: {
+          lat: 47.90284,
+          lng: 33.355199
+        }
+      },
+      {
+        name: "Інтербуд",
+        description: "вул. Воровського, 7а",
+        img: "https://liberta.ua/uploads/agent/83_Інтербуд_1540227058.jpeg",
+        locate: {
+          lat: 47.913912,
+          lng: 33.358011
+        }
+      },
+      {
+        name: "Центр Сантехники",
+        description: "вул.Ярослава Мудрого, 87 а",
+        img: "https://liberta.ua/uploads/agent/84_Центр%20Сантехники_1540227235.jpg",
+        locate: {
+          lat: 47.911373,
+          lng: 33.420026
+        }
+      },
+      {
+        name: "Союз",
+        description: "вул. Дніпровська, 422а",
+        img: "https://liberta.ua/uploads/agent/106_Союз_1540227775.jpg",
+        locate: {
+          lat: 48.495933,
+          lng: 35.929686
+        }
+      },
+      {
+        name: "Ванна Кімната",
+        description: "пр. Олександра Поля, 98",
+        img: "https://liberta.ua/uploads/agent/78_Ванна Кімната_1548747468.jpg",
+        locate: {
+          lat: 48.435711,
+          lng: 35.012838
+        }
+      },
+      {
+        name: "Лео Кераміка",
+        description: "вул. Бульвар Вечірній, 31а",
+        img: "https://liberta.ua/uploads/agent/116_Лео Кераміка (Кривий Ріг)_1548747510.jpg",
+        locate: {
+          lat: 47.936029,
+          lng: 33.432771
+        }
+      },
+      {
+        name: "UKRINSTAL",
+        description: "вул. Січових Стрільців, 94",
+        img: "https://liberta.ua/uploads/agent/81_UKRINSTAL_1617958904.jpg",
+        locate: {
+          lat: 48.444804,
+          lng: 35.028076
+        }
+      },
+      {
+        name: "MIRAGGIO",
+        description: "пр. Гагаріна, 24",
+        img: "https://liberta.ua/uploads/agent/82_MIRAGGIO_1595338866.jpg",
+        locate: {
+          lat: 48.447971,
+          lng: 35.057113
+        }
+      },
+      {
+        name: "Дом Керамики",
+        description: "пр. Пушкіна, 7",
+        img: "https://liberta.ua/uploads/agent/83_Дом Керамики_1595339029.jpg",
+        locate: {
+          lat: 48.464195,
+          lng: 35.031934
+        }
+      },
+      {
+        name: "LIBERTA фабрика",
+        description: "вул. Панікахи, 1",
+        img: "https://liberta.ua/uploads/agent/изображение_viber_2020-07-22_15-39-34_1595421764.jpg",
+        locate: {
+          lat: 48.404037,
+          lng: 35.040589
+        }
+      },
+      {
+        name: "Terra Dei ",
+        description: "ул. Виталия матусевича, 6",
+        img: "https://liberta.ua/uploads/agent/94_Terra Dei_1617959247.jpg",
+        locate: {
+          lat: 47.904139,
+          lng: 33.396665
+        }
+      },
+    ];
+
+    function initMap() {
+      var cityLocation = {
+        //                lat: 48.379433,
+        //                lng: 31.1655799
+        lat: 48.4664905,
+        lng: 35.0435713
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        center: cityLocation,
+        streetViewControl: false,
+        mapTypeControl: false,
+        fullscreenControl: false,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+        styles: [{ "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "simplified" }, { "lightness": 20 }] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [{ "hue": "#f49935" }] }, { "featureType": "road.highway", "elementType": "labels", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "hue": "#fad959" }] }, { "featureType": "road.arterial", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.local", "elementType": "labels", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "hue": "#a1cdfc" }, { "saturation": 30 }, { "lightness": 49 }] }]
+      });
+
+      var markerRed = "//liberta.ua/img/rose-marker.png";
+      var markerGreen = "https://liberta.ua/img/green-marker.png";
+      var currentPlace = null;
+
+
+      var infoWin = new google.maps.InfoWindow();
+
+      var markers = libMarkers.map(function (marker, i) {
+        var mItem = new google.maps.Marker({
+          position: marker.locate,
+          icon: markerRed
+        });
+        google.maps.event.addListener(mItem, 'click', function (evt) {
+          infoWin.setContent('<div class="container"><div class="row"><div class="col-12"><img class="img-fluid mx-auto" src="' + marker.img + '" alt=""><h6>' + marker.name + '</h6><p>' + marker.description + '</p><a class="get-directions" target="_blank" href="https://www.google.com/maps/dir//' + marker.locate.lat + ',' + marker.locate.lng + '/data=!4m2!4m1!3e0">Проложить маршрут</a></div></div></div>');
+          infoWin.open(map, mItem);
+        })
+        return mItem;
+      });
+
+      var markerCluster = new MarkerClusterer(map, markers,
+        { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    }
+
+  </script>
+</body>
+
+</html>

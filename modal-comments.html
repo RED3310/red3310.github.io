@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Страница не найдена</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/KievitPro-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <!-- <div class="media-panel">
+      <div class="media-button">
+
+        <div class="media-icon icon-blue" data-container="body" data-placement="right" data-toggle="popover"
+          data-trigger="hover"
+          data-content="Соедините при помощи Bluetooth свой смартфон с зеркалом Liberta и слушайте любимые треки прямо из вашего зеркала.">
+        </div>
+
+        <div class="media-icon icon-data" data-container="body" data-placement="right" data-toggle="popover"
+          data-trigger="hover" data-content="Время и дата на экране вашего зеркала."></div>
+
+        <div class="media-icon icon-radio" data-container="body" data-placement="left" data-toggle="popover"
+          data-trigger="hover"
+          data-content="Слушайте музыку, новости и передачи любимой радиостанции прямо из вашего зеркала."></div>
+
+        <div class="media-icon icon-temp" data-container="body" data-placement="right" data-toggle="popover"
+          data-trigger="hover" data-content="Температура помещения на экране вашего зеркала."></div>
+
+        <div class="media-icon icon-toutch" data-container="body" data-placement="left" data-toggle="popover"
+          data-trigger="hover"
+          data-content="Управляйте подсветкой и всеми возможностями вашего зеркала простым прикосновением."></div>
+
+        <div class="media-icon icon-value" data-container="body" data-placement="left" data-toggle="popover"
+          data-trigger="hover"
+          data-content="Встроенная в зеркало двухканальная аудиосистема премиум класса обеспечит качественное стерео звучание даже на максимальной громкости.">
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCommentWindow">
+      коментарий
+    </button>
+
+    <!-- Modal -->
+    <div class="modal modal-comment fade pl-0" id="modalCommentWindow" tabindex="-1" aria-labelledby="modalCommentLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="#">
+            <div class="modal-header px-0">
+              <h3 style="line-height: 2rem;" class="modal-title pl-0 pr-xl-100p mb-2" id="modalCommentLabel">Мой отзыв
+                про
+                <span>LEGIA угловая душевая
+                  кабина</span>
+              </h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="comment">
+                <div class="comment__content">
+
+                  <div class="form-group row mx-0 px-0 align-items-center">
+                    <label for="orderNumber" class="col-12 col-md-3 fs-14 px-0">Номер заказа</label>
+                    <input type="text" id="orderNumber" class="form-control col-12 col-md-9 mb-15p">
+                  </div>
+
+                  <div class="form-group row mx-0 px-0 align-items-center">
+                    <label for="reviewText" class="col-12 col-md-3 fs-14 px-0">Текст отзыва <span>*</span> </label>
+
+                    <textarea id="reviewText" class="form-control col-12 col-md-9 mb-15p"></textarea>
+                  </div>
+
+                  <div class="form-group row mx-0 px-0 align-items-center">
+                    <label for="reviewName" class="col-12 col-md-3 fs-14 px-0">Как вас зовут
+                      <span>*</span>
+                    </label>
+                    <input type="text" id="reviewName" class="form-control col-12 col-md-9 mb-15p">
+                  </div>
+
+                  <div class="form-group col-form-label row mx-0 align-items-center">
+                    <label for="text-input" class="col-5 col-md-3 px-0 my-1">Качество</label>
+                    <div class="rating col-auto col-md-9 p-0">
+
+                      <input type="radio" id="qualityStar-5" name="quality" value="5">
+                      <label class="star" title="Отлично, советую!" for="qualityStar-5"></label>
+
+                      <input type="radio" id="qualityStar-4" name="quality" value="4">
+                      <label class="star" title="Лучше, чем ожидалось" for="qualityStar-4"></label>
+
+                      <input type="radio" id="qualityStar-3" name="quality" value="3">
+                      <label class="star" title="На уровне ожиданий" for="qualityStar-3"></label>
+
+                      <input type="radio" checked="" id="qualityStar-2" name="quality" value="2">
+                      <label class="star" title="Хуже среднего" for="qualityStar-2"></label>
+
+                      <input type="radio" id="qualityStar-1" name="quality" value="1">
+                      <label class="star" title="Плохо, не советую!" for="qualityStar-1"></label>
+
+                    </div>
+                    <label for="text-input" class="col-5 col-md-3 px-0 my-1">Сервис</label>
+                    <div class="rating col-auto col-md-9 p-0">
+
+                      <input type="radio" id="serviceStar-5" name="service" value="5">
+                      <label class="star" title="Отлично, советую!" for="serviceStar-5"></label>
+
+                      <input type="radio" id="serviceStar-4" name="service" value="4">
+                      <label class="star" title="Лучше, чем ожидалось" for="serviceStar-4"></label>
+
+                      <input type="radio" id="serviceStar-3" name="service" value="3">
+                      <label class="star" title="На уровне ожиданий" for="serviceStar-3"></label>
+
+                      <input type="radio" checked="" id="serviceStar-2" name="service" value="2">
+                      <label class="star" title="Хуже среднего" for="serviceStar-2"></label>
+
+                      <input type="radio" id="serviceStar-1" name="service" value="1">
+                      <label class="star" title="Плохо, не советую!" for="serviceStar-1"></label>
+
+                    </div>
+
+                    <label for="text-input" class="col-5 col-md-3 px-0 my-1">Доставка</label>
+                    <div class="rating col-auto col-md-9 p-0">
+
+                      <input type="radio" id="deliveryStar-5" name="delivery" value="5">
+                      <label class="star" title="Отлично, советую!" for="deliveryStar-5"></label>
+
+                      <input type="radio" id="deliveryStar-4" name="delivery" value="4">
+                      <label class="star" title="Лучше, чем ожидалось" for="deliveryStar-4"></label>
+
+                      <input type="radio" id="deliveryStar-3" name="delivery" value="3">
+                      <label class="star" title="На уровне ожиданий" for="deliveryStar-3"></label>
+
+                      <input type="radio" checked="" id="deliveryStar-2" name="delivery" value="2">
+                      <label class="star" title="Хуже среднего" for="deliveryStar-2"></label>
+
+                      <input type="radio" id="deliveryStar-1" name="delivery" value="1">
+                      <label class="star" title="Плохо, не советую!" for="deliveryStar-1"></label>
+
+                    </div>
+
+                  </div>
+
+                  <div class="form-group mb-0">
+                    <label class="w-100" for="exampleCommentsFile">
+                      <a class="fs-16 btn btn-gold w-100 font-weight-bold py-10p">Выберете файл</a>
+                    </label>
+                    <input type="file" class="form-control-file d-none" id="exampleCommentsFile">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer d-block p-0">
+              <div class="row">
+
+                <div class="col-12 p-0">
+                  <div class="recommendation col-12 p-0 my-4">
+                    <div class="d-flex justify-content-start flex-wrap">
+                      <span class="font-weight-bold mr-3 mb-2">Вы рекомендуете этот товар?</span>
+                      <div>
+                        <input id="like" name="recommendation" type="radio" value="like">
+                        <label class="mod-like-btn" title="нравиться" for="like"></label>
+                        <input id="dislike" name="recommendation" type="radio" value="dislike">
+                        <label class="mod-dislike-btn" title="не нравиться" for="dislike"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 p-0 mb-20p text-sm-left text-center">
+                  <button type="button" class="btn btn-primary py-15p px-50p rounded-pill fs-18">Оставить отзыв</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

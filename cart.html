@@ -265,59 +265,60 @@
             </div>
             <hr class="hr-line m-0">
           </div>
+          <form class="needs-validation" novalidate="">
 
-          <form>
             <fieldset class="service__step service__step--first active py-25p border-0">
               <h3>Заполните информацию о себе</h3>
               <div class="service__step-content">
-                <div class="form-group form-row">
-                  <label for="name" class="col-md-3 col-form-label fs-14">Имя и фамилия <span class="text-muted">*</span></label>
-                  <div class="col-md-6">
-                    <input type="text" id="name" class="form-control" required="">
-                  </div>
-                  <div class="col-md-3">
-                    <div class="col-form-label invalid-feedback mt-0">Введите имя и фамилию
-                    </div>
+
+                <div class="form-group form-row align-items-center">
+                  <label class="col-lg-3  fs-14" for="name">ФИО <span class="text-secondary">*</span></label>
+                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="name" required="">
+                  <div class="col-lg-4  invalid-feedback invalid-forms-content pl-35p">Введите ФИО</div>
+                </div>
+
+                <div class="form-group form-row align-items-center">
+                  <label class="col-lg-3 fs-14" for="city">Город <span class="text-secondary">*</span></label>
+                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="city" required="">
+                  <div class="col-lg-4 invalid-feedback invalid-forms-content pl-35p">Введите город</div>
+                </div>
+
+                <div class="form-group form-row align-items-center">
+                  <label class="col-lg-3  fs-14" for="phone">Мобильный телефон <span class="text-secondary">*</span></label>
+                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="phone" placeholder="+38 ( xxx ) xxx-xx-xx" required="">
+                  <div class="col-lg-4 invalid-feedback invalid-forms-content pl-35p">Введите Ваш телефон
                   </div>
                 </div>
-                <div class="form-group form-row">
-                  <label class="col-md-3 col-form-label fs-14">Город <span class="text-muted">*</span></label>
-                  <div class="col-md-6">
-                    <select class="select-two" style="width: 100%" data-placeholder="Введите город">
-                      <option></option>
-                      <option>м. Луцьк (Волинська обл.)</option>
-                      <option>м. Лубни (Полтавська обл.)</option>
-                    </select>
-                    <div class="fs-12 font-weight-bolder text-muted py-1">Например: <span class="text-primary">Киев</span>
-                    </div>
+
+                <div class="form-group form-row  position-relative align-items-center">
+                  <label class="col-lg-3  fs-14" for="email">Электронная почта <span class="text-secondary">*</span></label>
+                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="email" required="">
+                  <div class="col-lg-4 invalid-feedback invalid-forms-content pl-35p">Введите электронный
+                    адрес
                   </div>
-                </div>
-                <div class="form-group form-row">
-                  <label for="phone" class="col-md-3 col-form-label fs-14">Мобильный телефон <span class="text-muted">*</span></label>
-                  <div class="col-md-6">
-                    <input type="text" id="phone" class="form-control" placeholder="+38 ( xxx ) xxx-xx-xx" required="">
-                  </div>
-                  <div class="col-md-3">
-                    <div class="col-form-label invalid-feedback mt-0">Введите Ваш телефон</div>
-                  </div>
-                </div>
-                <div class="form-group form-row">
-                  <label for="email" class="col-md-3 col-form-label fs-14">Электронная почта <span class="text-muted">*</span></label>
-                  <div class="col-md-6">
-                    <input type="text" id="email" class="form-control" placeholder="info@liberta.com.ua" required="">
-                    <div class="fs-12 text-muted font-weight-bolder py-1">Если вы хотите следить
-                      за статусом
-                      выполнения
-                      заказа</div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="col-form-label invalid-feedback mt-0">Введите Вашу электронную
-                      почту
-                    </div>
-                  </div>
+                  <span class="sub-text-input m-0 fs-12 text-muted py-1">Если вы хотите следить за статусом выполнения
+                    заказа </span>
                 </div>
               </div>
             </fieldset>
+            <script>
+              (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                  var forms = document.getElementsByClassName('needs-validation');
+                  var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script>
+
             <hr class="hr-line m-0">
             <fieldset class="pt-25p">
               <h3>Выберите способ доставки</h3>
@@ -379,7 +380,8 @@
             <div class="final-block pt-30p pb-70p">
               <div class="row">
                 <div class="col-md-12">
-                  <button class="btn-collapse text-primary font-weight-bold p-0 mb-2 fs-16 collapsed" data-toggle="collapse" href="#CollapseComments" role="button" aria-expanded="false" aria-controls="CollapseOptions">Добавить коментарий к
+                  <button class="btn-collapse text-primary font-weight-bold p-0 mb-2 fs-16 collapsed" data-toggle="collapse" href="#CollapseComments" role="button" aria-expanded="false" aria-controls="CollapseOptions">Добавить
+                    коментарий к
                     заказу</button>
                   <div class="collapse multi-collapse" id="CollapseComments">
                     <div class="card card-body row">
@@ -436,19 +438,22 @@
           <div id="final-price" class="final-price">
             <div class="row">
               <div class="col-md-5 col-xl-12">
-                <div class="quantity font-weight-bold">Итого <span>1 товара</span> на суму</div>
+                <div class="quantity font-weight-bold mb-3">Итого <span>1 товара</span> на суму</div>
+                <span id="full-price" class="text-secondary text-through" style="display: none">18 666 <span>грн.</span></span>
                 <div class="total">
-                  <span class="amount fs-48">16 948</span>
+                  <span style="line-height: 1;" class="amount fs-48">16 948</span>
                   <span class="currency fs-24">грн.</span>
                   <p class="text-muted fs-14">Доставка бесплатно</p>
                 </div>
-                <div class="promo-box mb-3">
-                  <button class="btn btn-link pl-0">Активировать промокод?</button>
-                  <button class="btn btn-link pl-0">Активировать другой промокод?</button>
-                  <div class="form-group position-relative">
-                    <input type="text" class="form-control bg-white" required="">
-                    <button class="btn btn-promo btn-link" type="button" id="button-addon2">Активировать</button>
-                  </div>
+                <div id="promo-box" class="mb-3">
+                  <form action="#">
+                    <button id="activate-code" class="btn btn-link pl-0 mb-0">Активировать промокод?</button>
+                    <button id="another-code" class="btn btn-link pl-0" style="display: none">Активировать другой промокод?</button>
+                    <div id="form-promo" class="form-group position-relative" style="display: none">
+                      <input id="input-promo" type="text" class="form-control bg-white" maxlength="25" required="">
+                      <button id="submit-code" class="btn btn-promo btn-link" type="button">Активировать</button>
+                    </div>
+                  </form>
                 </div>
                 <div class="col-md-6 col-xl-12 d-block d-md-none px-0">
 

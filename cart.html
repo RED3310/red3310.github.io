@@ -267,57 +267,45 @@
           </div>
           <form class="needs-validation" novalidate="">
 
-            <fieldset class="service__step service__step--first active py-25p border-0">
+            <fieldset>
               <h3>Заполните информацию о себе</h3>
-              <div class="service__step-content">
+              <div class="form-about-me">
 
                 <div class="form-group form-row align-items-center">
-                  <label class="col-lg-3  fs-14" for="name">ФИО <span class="text-secondary">*</span></label>
-                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="name" required="">
-                  <div class="col-lg-4  invalid-feedback invalid-forms-content pl-35p">Введите ФИО</div>
-                </div>
-
-                <div class="form-group form-row align-items-center">
-                  <label class="col-lg-3 fs-14" for="city">Город <span class="text-secondary">*</span></label>
-                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="city" required="">
-                  <div class="col-lg-4 invalid-feedback invalid-forms-content pl-35p">Введите город</div>
-                </div>
-
-                <div class="form-group form-row align-items-center">
-                  <label class="col-lg-3  fs-14" for="phone">Мобильный телефон <span class="text-secondary">*</span></label>
-                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="phone" placeholder="+38 ( xxx ) xxx-xx-xx" required="">
-                  <div class="col-lg-4 invalid-feedback invalid-forms-content pl-35p">Введите Ваш телефон
+                  <label class="col-xs-12 col-md-3  fs-14" for="name">ФИО <span class="text-secondary">*</span></label>
+                  <div class="col-xs-12 col-md-7 col-xl-6 has-error">
+                    <input class="form-control px-15p" type="text" id="name" required="">
+                    <span class="error-desc has-warning">Введите ФИО</span>
                   </div>
                 </div>
 
-                <div class="form-group form-row  position-relative align-items-center">
-                  <label class="col-lg-3  fs-14" for="email">Электронная почта <span class="text-secondary">*</span></label>
-                  <input class="form-group-item col-lg-5  form-control px-15p" type="text" id="email" required="">
-                  <div class="col-lg-4 invalid-feedback invalid-forms-content pl-35p">Введите электронный
-                    адрес
+
+                <div class="form-group form-row align-items-center">
+                  <label class="col-xs-12 col-md-3 fs-14" for="city">Город <span class="text-secondary">*</span></label>
+                  <div class="col-xs-12 col-md-7 col-xl-6  has-success"><input class="form-control px-15p" type="text" id="city" required="">
+                    <span class="error-desc has-warning">Введите город</span>
                   </div>
-                  <span class="sub-text-input m-0 fs-12 text-muted py-1">Если вы хотите следить за статусом выполнения
-                    заказа </span>
                 </div>
+
+
+                <div class="form-group form-row align-items-center">
+                  <label class="col-xs-12 col-md-3  fs-14" for="phone">Мобильный телефон <span class="text-secondary">*</span></label>
+                  <div class="col-xs-12 col-md-7 col-xl-6 has-success"><input class="form-control px-15p" type="text" id="phone" placeholder="+38 ( xxx ) xxx-xx-xx" required="">
+                    <span class="error-desc has-warning">Введите Ваш телефон</span>
+                  </div>
+                </div>
+
+
+                <div class="form-group form-row align-items-center">
+                  <label class="col-xs-12 col-md-3  fs-14" for="email">Электронная почта <span class="text-secondary">*</span></label>
+                  <div class="col-xs-12 col-md-7 col-xl-6 has-error"><input class="form-control px-15p" type="text" id="email" required="">
+                    <span class="error-desc has-warning">Введите электронный адрес</span>
+                    <span class="small text-muted">Если вы хотите следить за статусом выполнения заказа</span>
+                  </div>
+                </div>
+
               </div>
             </fieldset>
-            <script>
-              (function () {
-                'use strict';
-                window.addEventListener('load', function () {
-                  var forms = document.getElementsByClassName('needs-validation');
-                  var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                    }, false);
-                  });
-                }, false);
-              })();
-            </script>
 
             <hr class="hr-line m-0">
             <fieldset class="pt-25p">
@@ -384,10 +372,9 @@
             <div class="final-block pt-30p pb-70p">
               <div class="row">
                 <div class="col-md-12">
-                  <button class="btn-collapse text-primary font-weight-bold p-0 mb-2 fs-16 collapsed" data-toggle="collapse" href="#CollapseComments" role="button" aria-expanded="false" aria-controls="CollapseOptions">Добавить
-                    коментарий к
-                    заказу</button>
-                  <div class="collapse multi-collapse" id="CollapseComments">
+                  <button class="btn-collapse text-primary font-weight-bold p-0 mb-2 fs-16" type="button" data-toggle="collapse" data-target="#collapseComments" aria-expanded="false" aria-controls="collapseComments">Добавть
+                    коментарий к заказу</button>
+                  <div class="collapse multi-collapse" id="collapseComments">
                     <div class="card card-body row">
                       <div class="col-xl-8 col-md-8 form-group">
                         <label for="exampleComments">Ваш комментарий</label>

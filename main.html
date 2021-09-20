@@ -902,20 +902,443 @@
     <a title="Telegram" class="telegram-icon" href="tg://resolve?domain=LibertaUa"><img src="//liberta.ua/img/telegram.svg" width="65px" height="65px"></a>
     <a title="Viber" class="viber-icon" href="viber://chat?number=+380673265980"><img src="//liberta.ua/img/viber2.svg" width="70px" height="70px"></a>
 
-    <button class="gif-man d-none d-xl-block">
+    <button class="gif-man d-none d-xl-block" data-toggle="modal" data-target="#modalMetering">
       <img src="//liberta.ua/img/man.gif.pagespeed.ce.kJpn_YfpUB.gif" alt="Заявка на замер" class="gif-start">
       <img src="//liberta.ua/img/xman-g.gif.pagespeed.ic.Nafnh502fx.png" alt="Заявка на замер" class="gif-end d-none">
     </button>
 
-    <!-- <button title="Заявка на замер" type="button" class="metering-icon">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="//liberta.ua/img/xrule-icon.png.pagespeed.ic.P9Ct2hY6gV.png" alt="Заявка на замер">
-        </div>
-      </div>
-    </button> -->
+    <button title="Заявка на замер" type="button" class="metering-icon d-xl-none" data-toggle="modal" data-target="#modalMetering">
+
+      <img class="flip-img" src="//liberta.ua/img/xrule-icon.png.pagespeed.ic.P9Ct2hY6gV.png" alt="Заявка на замер">
+
+
+
+    </button>
 
   </div>
+
+  <!------------------------------------------------------modal-metering----------------------------------------------------->
+  <div class="modal modal-metering fade pl-0" id="modalMetering" tabindex="-1" aria-labelledby="modalMetering" aria-hidden="true">
+    <div class="modal-dialog">
+      <div id="metering" class="modal-content px-40p pb-40p">
+        <div class="modal-header d-block px-0">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2 class="modal-title p-0 fs-32" id="modalMeteringLabelTwo">Изделия для замера</h2>
+            </div>
+            <div class="col-sm-4"><span class="text-muted fs-14 float-sm-right">Шаг <span id="metering-step">1</span> из
+                3</span>
+            </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body pb-3 py-20p">
+          <div class="metering">
+            <form class="needs-validation" novalidate="">
+              <div id="metering-step-1" class="metering__window metering__window-one collapse show" data-parent="#metering">
+
+                <div class="form-group form-row mb-2">
+                  <label for="inputMeasurementCity" class="col-sm-4 col-form-label">Город</label>
+
+                  <div class="col-sm-8">
+                    <select id="inputMeasurementCity" class="form-control" required="">
+                      <option value="0" disabled="" selected="">Выберите город</option>
+                      <option value="kyiv">Киев</option>
+                      <option value="dnipro">Днепр</option>
+                      <option value="lviv">Львов</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="tab-content">
+
+                  <div id="metering-kyiv" class="tab-metering fs-14">
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Стоимость замера</p>
+                        <hr>
+                      </div>
+
+                      <div class="col-12">
+                        <p>город Киев: <span>500 грн.</span></p>
+                      </div>
+                      <div class="col-12">
+                        <p>Вишневое, С/П Борщаговка, Чайки, Крюковщина: <span>700 грн.</span></p>
+                      </div>
+
+                      <div class="col-12">
+                        <p>Ирпень, Вышгород, Гостомель, Козин, Буча: <span>750 грн.</span></p>
+                      </div>
+
+                      <div class="col-12">
+                        <p>Обухов, Бровары, Борисполь, Н/С Петровцы: <span>800 грн.</span></p>
+                      </div>
+
+                      <div class="col-12">
+                        <p>Другое: <span>по запросу</span></p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="metering-dnipro" class="tab-metering fs-14">
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Стоимость замера</p>
+                        <hr>
+                      </div>
+
+                      <div class="col-12">
+                        <p>По городу Днепр: <span>350 грн.</span></p>
+                      </div>
+                      <div class="col-12">
+                        <p>пос. Кировское: <span>500 грн.</span></p>
+                      </div>
+
+                      <div class="col-12">
+                        <p>г. Новомосковск: <span>600 грн.</span></p>
+                      </div>
+
+                      <div class="col-12">
+                        <p>пос. Новоалександровка: <span>350 грн.</span></p>
+                      </div>
+
+                      <div class="col-12">
+                        <p>г. Каменское: <span>700 грн.</span></p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="metering-lviv" class="tab-metering fs-14">
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Стоимость замера</p>
+                        <hr>
+                      </div>
+
+                      <div class="col-12">
+                        <p>Львів, Стрий, Дрогобич, Трускавець, Моршин: <span>350 грн.</span></p>
+                      </div>
+                      <div class="col-12">
+                        <p>Брюховичі, Винники, Солонка, Рудне, Яворів,</p>
+                      </div>
+                      <div class="col-12">
+                        <p>Дубляни, Пасіки-Зубрицькі: <span>500 грн.</span></p>
+                      </div>
+                      <div class="col-12">
+                        <p>Другие: <span>по запросу</span></p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div id="metering-step-2" class="metering__window metering__window-two collapse" data-parent="#metering">
+
+                <div class="row">
+
+                  <div class="col-6 col-sm-6 col-md-4  custom-checkbox">
+                    <input class="custom-control-input" id="measurementItem1" type="checkbox" required="">
+                    <label class="custom-control-label" for="measurementItem1">
+                      <img class="img-fluid" src="//liberta.ua/img/xmeasurement1.png.pagespeed.ic.RqOfB4HE1G.png">
+                      <div><span class="font-weight-bolder fs-auto">Зеркало <span class="small">настенное</span></span>
+                      </div>
+
+                    </label>
+                    <div class="product-item-full"></div>
+                  </div>
+
+                  <div class="col-6 col-sm-6 col-md-4  custom-checkbox">
+                    <input class="custom-control-input" id="measurementItem2" type="checkbox" required="">
+                    <label class="custom-control-label" for="measurementItem2">
+                      <img class="img-fluid" src="//liberta.ua/img/xmeasurement2.png.pagespeed.ic.EuV8WzN0Od.png">
+                      <div><span class="font-weight-bolder fs-auto">Душевая кабина</span></div>
+
+                    </label>
+                    <div class="product-item-full"></div>
+                  </div>
+
+
+                  <div class="col-6 col-sm-6 col-md-4  custom-checkbox">
+                    <input class="custom-control-input" id="measurementItem3" type="checkbox" required="">
+                    <label class="custom-control-label" for="measurementItem3">
+                      <img class="img-fluid" src="//liberta.ua/img/xmeasurement3.png.pagespeed.ic.kERlD3k6r0.png">
+                      <div><span class="font-weight-bolder fs-auto">Перегородка стеклянная</span></div>
+
+                    </label>
+                    <div class="product-item-full"></div>
+                  </div>
+
+                  <div class="col-6 col-sm-6 col-md-4  custom-checkbox">
+                    <input class="custom-control-input" id="measurementItem4" type="checkbox" required="">
+                    <label class="custom-control-label" for="measurementItem4">
+                      <img class="img-fluid" src="//liberta.ua/img/xmeasurement4.png.pagespeed.ic.IqlKW7i_To.png">
+                      <div><span class="font-weight-bolder fs-auto">
+                          Раздвижная система <span class="small">Межкомнатная</span></span></div>
+
+                    </label>
+                    <div class="product-item-full"></div>
+                  </div>
+
+                  <div class="col-6 col-sm-6 col-md-4  custom-checkbox">
+                    <input class="custom-control-input" id="measurementItem5" type="checkbox" required="">
+                    <label class="custom-control-label" for="measurementItem5">
+                      <img class="img-fluid" src="//liberta.ua/img/xmeasurement5.png.pagespeed.ic.cgfaHyLroS.png">
+                      <div><span class="font-weight-bolder fs-auto">Дверь межкомнатная</span></div>
+
+                    </label>
+                    <div class="product-item-full"></div>
+                  </div>
+
+                  <div class="col-6 col-sm-6 col-md-4 custom-checkbox">
+                    <input class="custom-control-input" id="measurementItem6" type="checkbox" required="">
+                    <label class="custom-control-label" for="measurementItem6">
+                      <img class="img-fluid" src="//liberta.ua/img/xmeasurement6.png.pagespeed.ic.a6Cgken_NP.png">
+                      <div><span class="font-weight-bolder fs-auto">Другое</span></div>
+
+                    </label>
+                    <div class="product-item-full"></div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div id="metering-step-3" class="metering__window metering__window-two collapse" data-parent="#metering">
+                <div class="form-group form-row">
+                  <label for="name" class="col-md-4 col-form-label fs-16">ФИО <span class="text-muted">*</span>
+                  </label>
+                  <div class="col-md-8">
+                    <input type="text" id="name" placeholder="Иванов Иван Иванович" class="form-control" required="">
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label for="address" class="col-md-4 col-form-label fs-16">Адрес замера <span class="text-muted">*</span>
+                  </label>
+                  <div class="col-md-8">
+                    <input type="text" id="address" placeholder="Улица, дом, подъезд, квартира" class="form-control" required="">
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label for="phone" class="col-md-4 col-form-label fs-16">Номер телефона <span class="text-muted">*</span>
+                  </label>
+                  <div class="col-md-8">
+                    <input type="text" id="phone" class="form-control" placeholder="+38 ( xxx ) xxx-xx-xx" required="">
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label for="email" class="col-md-4 col-form-label fs-16">Электронная почта</label>
+                  <div class="col-md-8">
+                    <input type="text" id="email" class="form-control" placeholder="me@domen.com" required="">
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label for="comment" class="col-md-4 col-form-label fs-16">Комментарий </label>
+                  <div class="col-md-8">
+                    <textarea class="form-control" id="comment" rows="3" cols="15" required=""></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputMounting" class="col-md-4 pt-0 col-form-label">Производить монтаж? <span class="text-muted">*</span>
+                  </label>
+                  <div class="col-md-8 pl-2">
+                    <select id="inputMounting" class="form-control" required="">
+                      <option value="0" disabled="" selected="">Сделайте выбор...</option>
+                      <option value="no">Нет</option>
+                      <option value="yes">Да</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div id="mounting-kyiv" class="tab-mounting fs-14 mt-2">
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Стоимость монтажа</p>
+                        <hr>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Зеркало</p>
+                        <div>
+                          <span>10% от стоимости изделия, но не менее 500 грн.</span>
+                          <span class="font-weight-bold text-black float-right">10%</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Душевые кабины</p>
+                        <div>
+                          <span>15% от стоимости изделия, но не менее 1200 грн.</span>
+                          <span class="font-weight-bold text-black float-right">15%</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Двери и перегородки</p>
+                        <div>
+                          <span>15% от стоимости изделия, но не менее 1200 грн.</span>
+                          <span class="font-weight-bold text-black float-right">15%</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Нестандартные изделия</p>
+                        <div>
+                          <span>По запросу</span>
+                          <span class="font-weight-bold text-black float-right">-</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">При монтаже 3х и более изделий скидка</p>
+                        <div>
+                          <span>Необходимо уточнить детали</span>
+                          <span class="font-weight-bold text-black float-right">от 300 грн.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="mounting-dnipro" class="tab-mounting fs-14 mt-2">
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Стоимость монтажа</p>
+                        <hr>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Зеркало</p>
+                        <div>
+                          <span>до 2 м.кв.</span>
+                          <span class="font-weight-bold text-black float-right">500 грн.</span>
+                        </div>
+                        <div class="mb-10p">
+                          <span>свыше 2 м.кв.</span>
+                          <span class="font-weight-bold text-black float-right">325 грн. / м2</span>
+                        </div>
+                        <div>
+                          <span>Вклейка зеркального полотна</span>
+                          <span class="font-weight-bold text-black float-right">400 грн. / м2</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Душевые кабины</p>
+                        <div>
+                          <span>до 3 м.кв.</span>
+                          <span class="font-weight-bold text-black float-right">1400 грн.</span>
+                        </div>
+                        <div>
+                          <span>свыше 3 м.кв.</span>
+                          <span class="font-weight-bold text-black float-right">550 грн. / м2</span>
+                        </div>
+                        <div>
+                          <span>Возможное удорожание, при условии установки изделия
+                            на край ванны, поддона, кафеля и т.д.</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Двери и перегородки</p>
+                        <div>
+                          <span>правый берег</span>
+                          <span class="font-weight-bold text-black float-right">300 грн.</span>
+                        </div>
+                        <div>
+                          <span>левый берег</span>
+                          <span class="font-weight-bold text-black float-right">400 грн.</span>
+                        </div>
+                        <div>
+                          <span>за чертой города</span>
+                          <span class="font-weight-bold text-black float-right">индивидуально</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="mounting-lviv" class="tab-mounting fs-14 mt-2">
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Стоимость монтажа</p>
+                        <hr>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Зеркало</p>
+                        <div>
+                          <span>10% от стоимости изделия, но не менее 500 грн.</span>
+                          <span class="font-weight-bold text-black float-right">10%</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Душевые кабины</p>
+                        <div>
+                          <span>15% от стоимости изделия, но не менее 1200 грн.</span>
+                          <span class="font-weight-bold text-black float-right">15%</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Двери и перегородки</p>
+                        <div>
+                          <span>15% от стоимости изделия, но не менее 1200 грн.</span>
+                          <span class="font-weight-bold text-black float-right">15%</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">Нестандартные изделия</p>
+                        <div>
+                          <span>По запросу</span>
+                          <span class="font-weight-bold text-black float-right">-</span>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-10p">
+                        <p class="m-0">При монтаже 3х и более изделий скидка</p>
+                        <div>
+                          <span>Необходимо уточнить детали</span>
+                          <span class="font-weight-bold text-black float-right">от 300 грн.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer p-0">
+                <button id="metering-prev" type="button" class="btn btn-link float-right m-0" style="display: none" data-toggle="collapse" data-target="#metering-step-1" aria-expanded="false" aria-controls="metering-step-2">Назад
+                </button>
+                <button id="metering-next" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#metering-step-2" aria-expanded="false" aria-controls="metering-step-1" disabled="">Далее
+                </button>
+                <button id="metering-submit" type="submit" class="btn btn-secondary float-right m-0" style="display: none">
+                  Отправить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <script src="js/scripts.min.js"></script>

@@ -373,7 +373,7 @@
               </div>
               <div class="product-block__content pt-20p pt-xl-0">
                 <nav aria-label="breadcrumb" class="d-none d-xl-block">
-                  <ol class="breadcrumb pb-0">
+                  <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/">Главная</a></li>
                     <li class="breadcrumb-item"><a href="#">Душевые кабины LIBERTA</a></li>
 
@@ -1639,11 +1639,26 @@
                 </div>
               </div>
               <div class="col-12 p-0 mb-20p text-sm-left text-center">
-                <button type="button" class="btn btn-primary py-15p px-50p rounded-pill fs-18">Оставить отзыв</button>
+                <button data-toggle="modal" data-target="#modalConfirm" type="button" class="btn btn-primary py-15p px-50p rounded-pill fs-18">Оставить отзыв</button>
               </div>
             </div>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-confirm fade p-0" id="modalConfirm" tabindex="-1" aria-labelledby="modalFeedback" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header px-0">
+          <h3 class="modal-title px-0" id="modalFeedback">Спасибо за Ваш отзыв</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="font-weight-400">После проверки модератора он будет опубликован.</p>
+        </div>
       </div>
     </div>
   </div>

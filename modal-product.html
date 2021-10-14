@@ -16,15 +16,32 @@
   <div class="container">
 
 
-
     <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProductWindow">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProductLastWindow">
       Launch static backdrop modal
-    </button> -->
+    </button>
 
     <!-- Modal -->
-    <!-- <div class="modal modal-product fade" id="modalProductWindow" tabindex="-1" aria-labelledby="modalProductLabel"
-      aria-hidden="true">
+    <div class="modal modal-product__last fade" id="modalProductLastWindow" tabindex="-1" aria-labelledby="modalProductLastLabel" aria-hidden="true">
+      <div class="modal-dialog p-20p">
+        <div class="modal-content w-auto mx-auto p-40p">
+          <div class="modal-header">
+            <h3 class="modal-title text-center p-0" id="modalProductLastLabel">Заявка отправлена <br> успешно!</h3>
+          </div>
+          <div class="modal-footer p-15p">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="btn w-100 m-0 fs-18 btn-primary">ОK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProductWindow">
+      Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal modal-product fade" id="modalProductWindow" tabindex="-1" aria-labelledby="modalProductLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -38,9 +55,7 @@
               <div class="product__content">
                 <div class="row">
                   <div class="col-12 col-xl-7 col-md-7 d-flex justify-content-center align-items-center">
-                    <img id="modal-cart-img" class="img-fluid"
-                      src="//liberta.ua/generate-image?templates=288&amp;data={&quot;1&quot;:{&quot;name&quot;:&quot;Кромка зеркала&quot;,&quot;param&quot;:[{&quot;name&quot;:&quot;еврокромка&quot;}],&quot;sinonim&quot;:&quot;-F0&quot;},&quot;9&quot;:{&quot;name&quot;:&quot;Основная подсветка&quot;,&quot;param&quot;:[{&quot;name&quot;:&quot;Цвет&quot;,&quot;value&quot;:[&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],&quot;vid&quot;:[{&quot;name&quot;:&quot;белый&quot;}],&quot;sinonim&quot;:&quot;S1&quot;}]}}&amp;shine={&quot;9&quot;:1}&amp;part=5"
-                      alt="">
+                    <img id="modal-cart-img" class="img-fluid" src="//liberta.ua/generate-image?templates=288&amp;data={&quot;1&quot;:{&quot;name&quot;:&quot;Кромка зеркала&quot;,&quot;param&quot;:[{&quot;name&quot;:&quot;еврокромка&quot;}],&quot;sinonim&quot;:&quot;-F0&quot;},&quot;9&quot;:{&quot;name&quot;:&quot;Основная подсветка&quot;,&quot;param&quot;:[{&quot;name&quot;:&quot;Цвет&quot;,&quot;value&quot;:[&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],&quot;vid&quot;:[{&quot;name&quot;:&quot;белый&quot;}],&quot;sinonim&quot;:&quot;S1&quot;}]}}&amp;shine={&quot;9&quot;:1}&amp;part=5" alt="">
                   </div>
                   <div class="col-12 col-xl-5 col-md-5">
                     <div class="card card-body">
@@ -96,7 +111,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
   </div>
   <script src="js/scripts.min.js"></script>

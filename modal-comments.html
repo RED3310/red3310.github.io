@@ -18,28 +18,28 @@
   <div class="container">
 
     <!---------------------------------------------------------------------------------------------------------------------------->
-    <!-- Button trigger modal
-   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFeedback">
-    Launch static backdrop modal
-  </button>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFeedback">
+      Launch static backdrop modal
+    </button> -->
 
-   Modal-Thank you for your feedback
-  <div class="modal modal-product fade" id="Feedback" tabindex="-1" aria-labelledby="modalFeedback"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="modalProductLabel">Спасибо за Ваш отзыв</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"></span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>После проверки модератора он будет опубликован.</p>
+    <!-- Modal-Thank you for your feedback -->
+    <!-- <div class="modal modal-product fade" id="Feedback" tabindex="-1" aria-labelledby="modalFeedback"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalProductLabel">Спасибо за Ваш отзыв</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>После проверки модератора он будет опубликован.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>  -->
+    </div> -->
 
     <!---------------------------------------------------------------------------------------------------------------------------->
 
@@ -47,13 +47,12 @@
 
 
     <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCommentWindow">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCommentWindow">
       коментарий
-    </button> -->
+    </button>
 
     <!-- Modal -->
-    <!-- <div class="modal modal-comment fade pl-0" id="modalCommentWindow" tabindex="-1" aria-labelledby="modalCommentLabel"
-      aria-hidden="true">
+    <div class="modal modal-comment fade pl-0" id="modalCommentWindow" tabindex="-1" aria-labelledby="modalCommentLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <form action="#">
@@ -102,7 +101,7 @@
                       <input type="radio" id="qualityStar-3" name="quality" value="3">
                       <label class="star" title="На уровне ожиданий" for="qualityStar-3"></label>
 
-                      <input type="radio" checked id="qualityStar-2" name="quality" value="2">
+                      <input type="radio" checked="" id="qualityStar-2" name="quality" value="2">
                       <label class="star" title="Хуже среднего" for="qualityStar-2"></label>
 
                       <input type="radio" id="qualityStar-1" name="quality" value="1">
@@ -121,7 +120,7 @@
                       <input type="radio" id="serviceStar-3" name="service" value="3">
                       <label class="star" title="На уровне ожиданий" for="serviceStar-3"></label>
 
-                      <input type="radio" checked id="serviceStar-2" name="service" value="2">
+                      <input type="radio" checked="" id="serviceStar-2" name="service" value="2">
                       <label class="star" title="Хуже среднего" for="serviceStar-2"></label>
 
                       <input type="radio" id="serviceStar-1" name="service" value="1">
@@ -141,7 +140,7 @@
                       <input type="radio" id="deliveryStar-3" name="delivery" value="3">
                       <label class="star" title="На уровне ожиданий" for="deliveryStar-3"></label>
 
-                      <input type="radio" checked id="deliveryStar-2" name="delivery" value="2">
+                      <input type="radio" checked="" id="deliveryStar-2" name="delivery" value="2">
                       <label class="star" title="Хуже среднего" for="deliveryStar-2"></label>
 
                       <input type="radio" id="deliveryStar-1" name="delivery" value="1">
@@ -168,11 +167,11 @@
                   <div class="recommendation col-12 p-0 my-4">
                     <div class="d-flex justify-content-start flex-wrap">
                       <span class="font-weight-bold mr-3 mb-2">Вы рекомендуете этот товар?</span>
-                      <div>
-                        <input id="like" name="recommendation" type="radio" value="like">
-                        <label class="mod-like-btn" title="нравиться" for="like"></label>
-                        <input id="dislike" name="recommendation" type="radio" value="dislike">
-                        <label class="mod-dislike-btn" title="не нравиться" for="dislike"></label>
+                      <div class="no_focus">
+                        <input class="mod-like" id="like" name="recommendation" type="radio" value="like">
+                        <label tabindex="0" class="mod-like-btn" title="нравиться" for="like"></label>
+                        <input class="mod-dislike" id="dislike" name="recommendation" type="radio" value="dislike">
+                        <label tabindex="0" class="mod-dislike-btn" title="не нравиться" for="dislike"></label>
                       </div>
                     </div>
                   </div>
@@ -185,8 +184,7 @@
           </form>
         </div>
       </div>
-    </div> -->
-
+    </div>
   </div>
   <script src="js/scripts.min.js"></script>
 </body>

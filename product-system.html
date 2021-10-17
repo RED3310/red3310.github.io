@@ -356,21 +356,24 @@
               <span class="product-system__name-product fs-md-26 d-xl-none">LARGO</span>
               <span class="product-system__heading fs-md-24">Заявка на просчет</span>
             </div>
-            <form class="mt-4">
+
+            <!-- <form class="mt-4">
               <div class="form-group form-row align-items-center">
                 <label class="col-12 text-muted mb-1" for="name">Имя и Фамилия</label>
-                <div class="col-12 has-error">
+                <div class="col-12 parsley-error">
                   <input class="form-control px-15p" type="text" id="name" required="">
                 </div>
               </div>
               <div class="form-group form-row align-items-center">
                 <label class="col-12 fs-14 text-muted mb-1" for="email">Электронная почта</label>
-                <div class="col-12 has-success"><input class="form-control px-15p" type="text" id="email" required="">
+                <div class="col-12 parsley-success"><input class="form-control px-15p" type="text" id="email"
+                    required="">
                 </div>
               </div>
               <div class="form-group form-row align-items-center">
                 <label class="col-12  fs-14 text-muted mb-1" for="phone">Мобильный телефон</label>
-                <div class="col-12 has-success"><input class="form-control px-15p" type="text" id="phone" placeholder="+38 ( xxx ) xxx-xx-xx" required="">
+                <div class="col-12 parsley-success"><input class="form-control px-15p" type="text" id="phone"
+                    placeholder="+38 ( xxx ) xxx-xx-xx" required="">
                 </div>
               </div>
               <div class="product-system__upload">
@@ -384,10 +387,66 @@
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit" class="btn btn-secondary font-weight-500 rounded-pill fs-18 px-45p py-10p mt-4" data-toggle="modal" data-target="#modalProductLastWindow">Отправить
+                <button type="submit" class="btn btn-secondary font-weight-500 rounded-pill fs-18 px-45p py-10p mt-4"
+                  data-toggle="modal" data-target="#modalProductLastWindow">Отправить
                   заявку</button>
               </div>
+            </form> -->
+
+
+            <form class="needs-validation form-dark" novalidate="" id="sliding_system" action="/product/ajax/create-slider-system" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="_csrf-frontend" value="E_79tSqT7msS6uC15cS7DHuDBRpJeu-2NRPBIHLSPPNDmIvhG9uWIiaDgdyI9ulFKto9Nxw9qYZ5VK1uK7gFkg==">
+              <div class="form-group form-row align-items-center field-slidingsystem-username required">
+                <label class="col-12 text-muted mb-1" for="slidingsystem-username">Имя и Фамилия</label>
+                <div class="col-md-12"><input type="text" id="slidingsystem-username" class="form-control border-color" name="SlidingSystem[username]" aria-required="true" placeholder="Введите имя и фамилию" aria-invalid="true"></div>
+              </div>
+              <div class="form-group form-row align-items-center field-slidingsystem-email required">
+                <label class="col-12 text-muted mb-1" for="slidingsystem-email">Электронная почта</label>
+                <div class="col-md-12"><input type="email" id="slidingsystem-email" class="form-control" name="SlidingSystem[email]" aria-required="true" placeholder="Введите почту" aria-invalid="true">
+                </div>
+              </div>
+              <div class="form-group form-row align-items-center field-slidingsystem-phone required">
+                <label class="col-12 text-muted mb-1" for="slidingsystem-phone">Мобильный телефон</label>
+                <div class="col-md-12"><input type="text" id="slidingsystem-phone" class="form-control px-15p form-control-solid h-auto p-6 input-login phone-input" name="SlidingSystem[phone]" autocomplete="off" placeholder="Введите телефон" aria-required="true" inputmode="text" aria-invalid="false"></div>
+              </div>
+
+              <div class="form-group field-slidingsystem-customimagesattribute">
+                <div class="product-system__upload">
+                  <label class="system-label font-weight-500 fs-14">Загрузить чертежи</label>
+                  <div class="upload_form">
+                    <label>
+                      <input class="js-file-input d-none" type="file" id="slidingsystem-customimagesattribute" name="SlidingSystem[customImagesAttribute][]" multiple="">
+                      <span class="file-btn fs-14">Обзор...</span>
+                      <span class="js-file-name file-name fs-14" data-placeholder="Файл не выбран.">Файл не выбран.</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-secondary font-weight-500 rounded-pill fs-18 px-45p py-10p mt-4">
+                  Отправить заявку </button>
+              </div>
+
             </form>
+
+            <script>
+              (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                  var forms = document.getElementsByClassName('needs-validation');
+                  var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script>
           </div>
         </div>
       </section>

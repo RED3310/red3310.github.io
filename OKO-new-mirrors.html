@@ -327,57 +327,109 @@
 
   </header>
 
-  <main class="product product-OKO">
-    <div class="container b-shadow">
+  <!---------------------------------------------------------POP--UP---------------------------------------------------------------->
+
+  <div id="product-pop-up" class="product-data-pop-up py-2">
+    <div class="container">
       <div class="row align-items-center">
-        <section class="col-xl-8 col-lg-7 col-md-7 col-sm-12">
-          <h1 class="fs-48 d-md-none my-3">OKO Bronze </h1>
-          <div class="product-preview">
+        <div class="col-7 col-xl-8 d-flex align-items-center">
+          <div class="col-auto px-0">
+            <div>
+              <img class="img-fluid" src="./img/product/mirrors/brown.png" alt="LIVO" width="65" height="65">
+            </div>
+          </div>
+          <div class="col-8">
+            <h3 class="m-0">OKO Bronze</h3>
+          </div>
+        </div>
+        <div class="col-5 col-xl-4 d-flex align-items-center">
+          <div class="col-6 price-product">
+            <span class="fs-24"><span class="fs-30">19 700</span> грн.</span>
+            <p class="m-0 fs-12 text-muted">Доставка бесплатно</p>
+          </div>
+          <div class="col-6 p-0">
+            <button type="button" data-toggle="modal" data-target="#modalProductWindow" class="fs-14 btn btn-secondary rounded-pill py-10p px-25p">Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <main class="product product-OKO">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <section class="col-xl-8 col-md-7 col-sm-12 js-product-preview-wrap">
+          <div class="product-preview js-product-preview">
             <div class="product-block">
               <div class="product-block__gradient js-product-gradient d-none d-md-block">
                 <div class="product-block__gradient__color"></div>
               </div>
-              <div class="product-block__bg-mobile d-md-none">
-                <p class="design-by fs-md-16 mb-1 mb-md-3">Design by <br> Serhii Hotvianskyi</p>
-              </div>
-              <div class="product-block__bg js-product-background d-none d-md-block" style="background-image: url('./img/bg/Layer604.png')">
-                <p class="design-by fs-md-16 mb-1 mb-md-3">Design by <br> Serhii Hotvianskyi</p>
+              <div class="product-block__bg js-product-background" style="background-image: url('./img/bg/Layer604.png')">
+                <p class="design-by fs-12 mb-1 mb-md-3">Design by <br> Serhii Hotvianskyi</p>
               </div>
               <div class="product-block__content pt-20p pt-xl-0">
                 <nav aria-label="breadcrumb" class="d-none d-xl-block">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-black" href="/">Главная</a></li>
                     <li class="breadcrumb-item"><a class="text-black" href="#">Зеркала</a></li>
-                    <li class="breadcrumb-item active text-black" aria-current="page">OKO</li>
+                    <li class="breadcrumb-item active text-black" aria-current="page">OKO Bronze</li>
                   </ol>
                 </nav>
+                <!-- <div class="product-block__img">
+                  <img class="img-fluid" src="..." alt="">
+                </div> -->
+              </div>
+            </div>
+            <div class="product-info d-md-none js-product-info">
+              <div class="row py-3 align-items-center justify-content-between">
+                <div class="col-auto d-block d-md-none">
+                  <div class="product-info__name font-weight-bold js-info-name">OKO</div>
+                  <div class="product-info__size text-muted small js-info-size">800x600</div>
+                </div>
+                <div class="col-auto">
+                  <div class="fs-16 fs-md-24"><span class="fs-16 fs-md-32">19 700</span> грн.</div>
+                </div>
+                <div class="col-auto">
+                  <button type="button" data-toggle="modal" data-target="#modalProductWindow" class="btn btn-secondary py-1">Купить</button>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="col-xl-4 col-lg-5 col-md-5 pl-md-40p py-25p py-md-0">
-          <h1 style="line-height: 1em;" class="fs-lg-128 fs-sm-72 fs-48 ml-md-n90p ml-lg-n130p d-none d-md-block">
-            OKO
-            <br class="d-none d-md-block"> Bronze
-          </h1>
-          <div class="d-flex flex-column">
-            <p class="order-md-1 order-3 m-0 fs-lg-18">Декоративное круглое
-              зеркало <br> с
-              эффектом
-              оптической илюзии
-            </p>
-            <div class="row align-items-center justify-content-between order-md-3 order-1">
-              <div class="col-auto">
-                <div class="fs-16 fs-md-24"><span class="fs-24 fs-md-32">19 700</span> грн.</div>
-                <div class="fs-12 font-weight-bold">Бесплатная доставка</div>
+
+        <section class="col-xl-4 col-md-5 theme-bg">
+          <div class="product-sidebar-content">
+            <h1 style="line-height: 1em;" class="fs-lg-128 fs-sm-72 fs-48 ml-md-n70p ml-lg-n110p d-none d-md-block">
+              OKO
+              <br class="d-none d-md-block"> Bronze
+            </h1>
+            <div class="row js-product-size-wrap">
+              <div class="col-12 d-flex flex-column">
+                <div class="fs-18 order-md-1 order-3 mt-3">
+                  <p class="m-md-0  fs-lg-18">Декоративное круглое
+                    зеркало <br> с
+                    эффектом
+                    оптической илюзии
+                  </p>
+                  <input class="js-input-product-width" type="hidden" value="85">
+                  <input class="js-input-product-height" type="hidden" value="1000">
+                </div>
+                <div class="d-none d-md-block order-md-3 order-1 js-pop-up-anchor">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <p class="fs-16 fs-md-24 m-0"><span class="fs-16 fs-md-32">19 700</span> грн.</p>
+                      <p class="fs-12 font-weight-bold m-0">Бесплатная доставка</p>
+                    </div>
+                    <button type="button" data-toggle="modal" data-target="#modalProductWindow" class="btn btn-secondary py-10 px-25p">Купить</button>
+                  </div>
+                </div>
+                <div class="d-none d-md-block order-2">
+                  <hr>
+                </div>
               </div>
-              <div class="col-auto">
-                <button type="button" data-toggle="modal" data-target="#modalProductWindow" class="my-2 fs-18 btn btn-secondary rounded-pill py-1 px-20p py-md-10p  px-md-45p">Купить
-                </button>
-              </div>
-            </div>
-            <div class="order-2">
-              <hr class="mb-md-2">
             </div>
           </div>
         </section>

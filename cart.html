@@ -19,7 +19,7 @@
     <div class="header__top-cart">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-auto d-flex">
+          <div class="col-4 d-flex">
             <div class="d-none d-md-block d-xl-block">
               <a class="back-category">
                 <button class="btn-gold btn" type="button">
@@ -34,13 +34,13 @@
               </a>
             </div>
           </div>
-          <div class="col-auto text-center">
+          <div class="col-4 text-center">
             <a href="/" class="d-block">
               <img class="header__logo img-fluid d-none d-xl-block mx-auto" src="//liberta.ua/img/svg/logo.svg" alt="Liberta logo">
               <img class="header__logo header__logo--m img-fluid d-xl-none" src="//liberta.ua/img/svg/logo_mob.svg" alt="Liberta logo">
             </a>
           </div>
-          <div class="col-auto header__top-right">
+          <div class="col-4 header__top-right">
             <div class="row align-items-center justify-content-end flex-nowrap">
               <div class="header__phone col-auto d-none d-md-block">
                 <div class="fs-14">
@@ -54,9 +54,21 @@
       </div>
     </div>
   </div>
+
+
   <div class="main-ordering">
     <div class="container">
-      <div class="row">
+
+      <div class="row hidden-height">
+        <div class="col-12 text-center my-auto">
+          <h1 class="mb-50p">Корзина пуста</h1>
+          <a href="/" class="btn btn-primary">Вернуться на главную</a>
+        </div>
+      </div>
+
+
+      <!--d-none----------->
+      <div class="row d-none">
         <div class="col-md-12 col-xl-8">
           <div class="ordering pt-60p pb-25p ">
             <h1 class="mb-20p">Оформление заказа</h1>

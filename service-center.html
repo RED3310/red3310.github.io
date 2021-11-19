@@ -334,7 +334,8 @@
         <nav aria-label="breadcrumb" class="d-none d-xl-block">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Главная</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Сервисный центр – производство зеркал и стеклянных изделий Liberta</li>
+            <li class="breadcrumb-item active" aria-current="page">Сервисный центр – производство зеркал и стеклянных
+              изделий Liberta</li>
           </ol>
         </nav>
         <h1>Сервисный центр Liberta</h1>
@@ -412,7 +413,7 @@
               </div>
             </fieldset>
             <!-- add .active to show second step -->
-            <fieldset class="service__step service__step--second">
+            <fieldset class="active service__step service__step--second">
               <legend class="service__step-title h2">Особенности изделия</legend>
               <div class="service__step-content">
                 <div class="form-group form-row align-items-center">
@@ -477,9 +478,11 @@
                   <div class="col-md-6">
                     <textarea class="form-control" name="Repair[description]" id="text-input" rows="3"></textarea>
                     <label class="text-primary fs-12 font-weight-500 cursor-pointer mt-2">
-                      <input type="file" class="sr-only">
-                      <span>Прикрепить фото</span>
+                      <input type="file" class="sr-only js-file-input" multiple="">
+                      <span class="fs-12">Прикрепить фото <br></span>
                     </label>
+                    <div class="js-unloading text-dark fs-12 font-weight-bold">
+                    </div>
                   </div>
                 </div>
                 <div class="form-row">

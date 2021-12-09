@@ -18,28 +18,30 @@
       ЗАМЕРЫ
     </button>
 
-
-
     <div class="modal modal-metering fade pl-0" id="modalMetering" tabindex="-1" aria-labelledby="modalMetering" aria-hidden="true">
       <div class="modal-dialog">
         <div id="metering" class="modal-content px-40p pb-40p">
-          <div class="modal-header d-block px-0">
-            <div class="row align-items-center">
-              <div class="col-sm-8">
-                <h2 class="modal-title p-0 fs-32" id="modalMeteringLabelTwo">Изделия для замера</h2>
-              </div>
-              <div class="col-sm-4"><span class="text-muted fs-14 float-sm-right">Шаг <span id="metering-step">1</span>
-                  из 3</span>
-              </div>
-            </div>
+          <div class="modal-header d-block p-0">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"></span>
             </button>
           </div>
           <form action="#">
             <div class="modal-body pb-3 py-20p">
+
               <div class="metering">
                 <div id="metering-step-1" class="metering__window metering__window-one collapse show" data-parent="#metering">
+
+                  <div class="modal-header d-block px-0">
+                    <div class="row align-items-center">
+                      <div class="col-sm-8">
+                        <h2 class="modal-title p-0 fs-32">Заявка на замер</h2>
+                      </div>
+                      <div class="col-sm-4"><span class="text-muted fs-14 float-sm-right">Шаг 1
+                          из 3</span>
+                      </div>
+                    </div>
+                  </div>
 
                   <div class="form-group form-row mb-2">
                     <label for="inputMeasurementCity" class="col-sm-4 col-form-label">Город</label>
@@ -144,8 +146,18 @@
                 </div>
                 <div id="metering-step-2" class="metering__window metering__window-two collapse" data-parent="#metering">
 
-                  <div class="row">
+                  <div class="modal-header d-block px-0">
+                    <div class="row align-items-center">
+                      <div class="col-sm-8">
+                        <h2 class="modal-title p-0 fs-32">Изделия для замера</h2>
+                      </div>
+                      <div class="col-sm-4"><span class="text-muted fs-14 float-sm-right">Шаг 2 из 3</span>
 
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
                     <div class="col-6 col-sm-6 col-md-4  custom-checkbox">
                       <input class="custom-control-input" id="measurementItem1" type="checkbox">
                       <label class="custom-control-label" for="measurementItem1">
@@ -213,6 +225,17 @@
 
                 </div>
                 <div id="metering-step-3" class="metering__window metering__window-two collapse" data-parent="#metering">
+
+                  <div class="modal-header d-block px-0">
+                    <div class="row align-items-center">
+                      <div class="col-sm-8">
+                        <h2 class="modal-title p-0 fs-32">Ваши данные</h2>
+                      </div>
+                      <div class="col-sm-4"><span class="text-muted fs-14 float-sm-right">Шаг 3 из 3</span>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="form-group form-row">
                     <label for="name" class="col-md-4 col-form-label fs-16">ФИО <span class="text-muted">*</span>
                     </label>
